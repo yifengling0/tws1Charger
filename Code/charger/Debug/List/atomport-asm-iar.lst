@@ -1,0 +1,471 @@
+###############################################################################
+#
+# IAR Assembler V3.11.1.207 for STM8                      03/Jan/2021  15:55:59
+# Copyright 2010-2019 IAR Systems AB.
+#
+#    Source file  =  
+#        D:\Git\tws1Charger\Code\atomthreads\ports\stm8\atomport-asm-iar.s
+#    Command line =  
+#        -f C:\Users\liufe\AppData\Local\Temp\EWCF24.tmp
+#        (D:\Git\tws1Charger\Code\atomthreads\ports\stm8\atomport-asm-iar.s
+#        -M<> -r -lNxmea D:\Git\tws1Charger\Code\charger\Debug\List\
+#        --code_model small --data_model medium -o
+#        D:\Git\tws1Charger\Code\charger\Debug\Obj)
+#    List file    =  
+#        D:\Git\tws1Charger\Code\charger\Debug\List\atomport-asm-iar.lst
+#    Object file  =  
+#        D:\Git\tws1Charger\Code\charger\Debug\Obj\atomport-asm-iar.o
+#
+###############################################################################
+
+##############################################################################
+# Module ATOMPORTASM                                                         #
+##############################################################################
+
+D:\Git\tws1Charger\Code\atomthreads\ports\stm8\atomport-asm-iar.s
+      1                        ;
+      2                        ; Copyright (c) 2010, Atomthreads Project. All rights reserved.
+      3                        ;
+      4                        ; Redistribution and use in source and binary forms, with or without
+      5                        ; Modification, are permitted provided that the following conditions
+      6                        ; are met:
+      7                        ;
+      8                        ; 1. Redistributions of source code must retain the above copyright
+      9                        ;          notice, this list of conditions and the following disclaimer.
+     10                        ; 2. Redistributions in binary form must reproduce the above copyright
+     11                        ;    notice, this list of conditions and the following disclaimer in the
+     12                        ;    documentation and/or other materials provided with the distribution.
+     13                        ; 3. No personal names or organizations' names associated with the
+     14                        ;    Atomthreads project may be used to endorse or promote products
+     15                        ;    derived from this software without specific prior written permission.
+     16                        ;
+     17                        ; THIS SOFTWARE IS PROVIDED BY THE ATOMTHREADS PROJECT AND CONTRIBUTORS
+     18                        ; "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+     19                        ; TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+     20                        ; PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE PROJECT OR CONTRIBUTORS BE
+     21                        ; LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+     22                        ; CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+     23                        ; SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     24                        ; INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     25                        ; CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+     26                        ; ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+     27                        ; POSSIBILITY OF SUCH DAMAGE.
+     28                        ;
+     29                        
+     30                        
+     31                        ; IAR assembler routines
+     32                        
+     33                        
+     34                          NAME ATOMPORTASM
+     35    000000                SECTION .near_func.text:code
+     36                        
+     37                        ; Get definitions for virtual registers used by the compiler
+     38                        #include "vregs.inc"
+     39                        
+     40                        
+     41                        ;  \b archContextSwitch
+     42                        ;
+     43                        ;  Architecture-specific context switch routine.
+     44                        ;
+     45                        ;  Note that interrupts are always locked out when this routine is
+     46                        ;  called. For cooperative switches, the scheduler will have entered
+     47                        ;  a critical region. For preemptions (called from an ISR), the
+     48                        ;  ISR will have disabled interrupts on entry.
+     49                        ;
+     50                        ;  @param[in] old_tcb_ptr Pointer to the thread being scheduled out
+     51                        ;  @param[in] new_tcb_ptr Pointer to the thread being scheduled in
+     52                        ;
+     53                        ;  @return None
+     54                        ;
+     55                        ;  void archContextSwitch (ATOM_TCB *old_tcb_ptr, ATOM_TCB *new_tcb_ptr)
+     56    000000                PUBLIC archContextSwitch
+     57    000000              archContextSwitch:
+     58                        
+     59                            ; Parameter locations (IAR calling convention):
+     60                            ;   old_tcb_ptr = X register (word-width)
+     61                            ;   new_tcb_ptr = Y register (word-width)
+     62                        
+     63                            ; STM8 CPU Registers:
+     64                            ;
+     65                            ; A, X, Y: Standard working registers
+     66                            ; SP: Stack pointer
+     67                            ; PC: Program counter
+     68                            ; CC: Code condition register
+     69                            ;
+     70                            ; IAR compiler virtual registers
+     71                            ;
+     72                            ; ?b0 - ?b7: Scratch registers
+     73                            ; ?b8 - ?b15: Preserved registers
+     74                            ;
+     75                            ; The basic scheme is that some registers will already be saved
+     76                            ; onto the stack if the caller wishes them not to be clobbered.
+     77                            ; We only need to context-switch additional registers which the
+     78                            ; caller does not expect to be modified in a subroutine.
+     79                            ;
+     80                            ; If this is a cooperative context switch (a thread has called us
+     81                            ; to schedule itself out), the IAR compiler will have saved any
+     82                            ; of the registers which it does not want us to clobber. For IAR
+     83                            ; only virtual registers ?b8 to ?b15 are expected to retain their
+     84                            ; value across a function call, hence for cooperative context
+     85                            ; switches with this compiler we only need to save ?b8 to ?b15.
+     86                            ;
+     87                            ; If we were called from an interrupt routine (because a thread
+     88                            ; is being preemptively scheduled out), the situation is exactly
+     89                            ; the same. Any ISR which calls out to a subroutine will have
+     90                            ; similarly saved all registers which it needs us not to clobber,
+     91                            ; leaving only ?b8 to ?b15 which must be saved.
+     92                            ;
+     93                            ; The Cosmic compiler version of this context switch routine
+     94                            ; does not require any registers to be saved/restored, whereas
+     95                            ; this IAR equivalent reqires that 8 of the virtual registers
+     96                            ; are.
+     97                        
+     98                            ; We also have to do a little more work in here: we need to store
+     99                            ; the current stack pointer to the current thread's TCB, and
+    100                            ; switch in the new thread by taking the stack pointer from
+    101                            ; the new thread's TCB and making that our new stack pointer.
+    102                        
+    103                            ; (IAR) Compiler will have already saved any scratch registers
+    104                            ; (A, X, Y, CC, and ?b0 to ?b7) which it needs before calling here
+    105                            ; for cooperative switches. So these will already be on the stack
+    106                            ; and do not need to be context-switched. The same goes for
+    107                            ; __interrupt functions (i.e. preemptive switches): with the IAR
+    108                            ; compiler A, X, Y and CC will already be saved by interrupt handlers
+    109                            ; (those are actually automatically done by the CPU), and (because
+    110                            ; we call out from interrupt handlers to C kernel code (e.g.
+    111                            ; atomIntExit()) before calling here for a context-switch, the
+    112                            ; compiler will also have saved ?b0 to ?b7. This is because those
+    113                            ; called C functions cannot know they were called from an interrupt
+    114                            ; and will assume that they have ?b0 to ?b7 available as scratch
+    115                            ; registers. Either way (cooperative or interrupt/preemptive) we
+    116                            ; know that the only registers which must be preserved that are not
+    117                            ; already on the stack-frame are ?b8 to ?b15.
+    118    000000 3B ....          PUSH ?b8
+    119    000003 3B ....          PUSH ?b9
+    120    000006 3B ....          PUSH ?b10
+    121    000009 3B ....          PUSH ?b11
+    122    00000C 3B ....          PUSH ?b12
+    123    00000F 3B ....          PUSH ?b13
+    124    000012 3B ....          PUSH ?b14
+    125    000015 3B ....          PUSH ?b15
+    126                        
+    127                            ; The parameter pointing to the the old TCB (a word-width
+    128                            ;   pointer) is still untouched in the X register.
+    129                        
+    130                            ; (IAR) Take a copy of the new_tcb_ptr parameter from Y-reg in
+    131                            ; a temporary (?b0) register. We need to use Y briefly for SP
+    132                            ; access.
+    133    000018 90CF ....        ldw ?b0, Y
+    134                        
+    135                            ; Store current stack pointer as first entry in old_tcb_ptr
+    136    00001C 9096             ldw Y, SP    ; Move current stack pointer into Y register
+    137    00001E FF               ldw (X), Y   ; Store current stack pointer at first offset in TCB
+    138                        
+    139                        
+    140                            ; At this point, all of the current thread's context has been saved
+    141                            ; so we no longer care about keeping the contents of any registers
+    142                            ; except ?b0 which contains our passed new_tcb_ptr parameter (a
+    143                            ; pointer to the TCB of the thread which we wish to switch in).
+    144                            ;
+    145                            ; Our stack frame now contains all registers which need to be
+    146                            ; preserved or context-switched. It also contains the return address
+    147                            ; which will be either a function called via an ISR (for preemptive
+    148                            ; switches) or a function called from thread context (for cooperative
+    149                            ; switches).
+    150                            ;
+    151                            ; In addition, the thread's stack pointer (after context-save) is
+    152                            ; stored in the thread's TCB.
+    153                        
+    154                            ; We are now ready to restore the new thread's context. We switch
+    155                            ; our stack pointer to the new thread's stack pointer, and pop its
+    156                            ; context off the stack, before returning to the caller (the
+    157                            ; original caller when the new thread was last scheduled out).
+    158                        
+    159                            ; Get the new thread's stack pointer off the TCB (new_tcb_ptr).
+    160                            ; We kept a copy of new_tcb_ptr earlier in ?b0, copy it into X.
+    161    00001F CE ....          ldw X,?b0
+    162                        
+    163                            ; Pull the first entry out of new_tcb_ptr (the new thread's
+    164                            ; stack pointer) into X register.
+    165    000022 FE               ldw X,(X)
+    166                        
+    167                            ; Switch our current stack pointer to that of the new thread.
+    168    000023 94               ldw SP,X
+    169                        
+    170                            ; (IAR) We only save/restore ?b8 to ?b15
+    171    000024 32 ....          POP ?b15
+    172    000027 32 ....          POP ?b14
+    173    00002A 32 ....          POP ?b13
+    174    00002D 32 ....          POP ?b12
+    175    000030 32 ....          POP ?b11
+    176    000033 32 ....          POP ?b10
+    177    000036 32 ....          POP ?b9
+    178    000039 32 ....          POP ?b8
+    179                        
+    180                            ; The return address on the stack will now be the new thread's return
+    181                            ; address - i.e. although we just entered this function from a
+    182                            ; function called by the old thread, now that we have restored the new
+    183                            ; thread's stack, we actually return from this function to wherever
+    184                            ; the new thread was when it was previously scheduled out. This could
+    185                            ; be either a regular C routine if the new thread previously scheduled
+    186                            ; itself out cooperatively, or it could be an ISR if this new thread was
+    187                            ; previously preempted (on exiting the ISR, execution will return to
+    188                            ; wherever the new thread was originally interrupted).
+    189                        
+    190                            ; Return to the caller. Note that we always use a regular RET here
+    191                            ; because this is a subroutine regardless of whether we were called
+    192                            ; during an ISR or by a thread cooperatively switching out. The
+    193                            ; difference between RET and IRET on the STM8 architecture is that
+    194                            ; RET only pops the return address off the stack, while IRET also
+    195                            ; pops from the stack all of the CPU registers saved when the ISR
+    196                            ; started, including restoring the interrupt-enable bits from the CC
+    197                            ; register.
+    198                            ;
+    199                            ; It is important that whenever we call this function (whether from
+    200                            ; an ISR for preemptive switches or from thread context for
+    201                            ; cooperative switches) interrupts are always disabled. This means
+    202                            ; that whichever method by which we leave this routine we always
+    203                            ; have to reenable interrupts, so we can use the same context-switch
+    204                            ; routine for preemptive and cooperative switches.
+    205                            ;
+    206                            ; The possible call/return paths are as follows:
+    207                            ;
+    208                            ; Scenario 1 (cooperative -> cooperative):
+    209                            ;  Thread A: cooperatively switches out
+    210                            ;    * Thread A relinquishes control / cooperatively switches out
+    211                            ;    * Interrupts already disabled by kernel for cooperative reschedules
+    212                            ;    * Partial register context saved by calling function
+    213                            ;    * Call here at thread context
+    214                            ;    * Switch to Thread B
+    215                            ;  Thread B (was previously cooperatively switched out):
+    216                            ;    * Stack context for Thread B contains its return address
+    217                            ;    * Return to function which was called at thread context
+    218                            ;    * Interrupts are reenabled by CRITICAL_END() call in kernel
+    219                            ;    * Return to Thread B application code
+    220                            ;
+    221                            ; Scenario 2 (preemptive -> preemptive):
+    222                            ;  Thread A: preemptively switches out
+    223                            ;    * ISR occurs
+    224                            ;    * Interrupts disabled by CPU at ISR entry (assume no nesting allowed)
+    225                            ;    * Full register context saved by CPU at ISR entry
+    226                            ;    * Call here at ISR context
+    227                            ;    * Switch to Thread B
+    228                            ;  Thread B (was previously preemptively switched out):
+    229                            ;    * Stack context for Thread B contains its return address
+    230                            ;      and all context saved by the CPU on ISR entry
+    231                            ;    * Return to function which was called at ISR context
+    232                            ;    * Eventually returns to calling ISR which calls IRET
+    233                            ;    * IRET performs full register context restore
+    234                            ;    * IRET reenables interrupts
+    235                            ;    * Return to Thread B application code
+    236                            ;
+    237                            ; Scenario 3 (cooperative -> preemptive):
+    238                            ;  Thread A: cooperatively switches out
+    239                            ;    * Thread A relinquishes control / cooperatively switches out
+    240                            ;    * Interrupts already disabled by kernel for cooperative reschedules
+    241                            ;    * Partial register context saved by calling function
+    242                            ;    * Call here at thread context
+    243                            ;    * Switch to Thread B
+    244                            ;  Thread B (was previously preemptively switched out):
+    245                            ;    * Stack context for Thread B contains its return address
+    246                            ;      and all context saved by the CPU on ISR entry
+    247                            ;    * Return to function which was called at ISR context
+    248                            ;    * Eventually returns to calling ISR which calls IRET
+    249                            ;    * IRET performs full register context restore
+    250                            ;    * IRET reenables interrupts
+    251                            ;    * Return to Thread B application code
+    252                            ;
+    253                            ; Scenario 4 (preemptive -> cooperative):
+    254                            ;  Thread A: preemptively switches out
+    255                            ;    * ISR occurs
+    256                            ;    * Interrupts disabled by CPU at ISR entry (assume no nesting allowed)
+    257                            ;    * Full register context saved by CPU at ISR entry
+    258                            ;    * Call here at ISR context
+    259                            ;    * Switch to Thread B
+    260                            ;  Thread B (was previously cooperatively switched out):
+    261                            ;    * Stack context for Thread B contains its return address
+    262                            ;    * Return to function which was called at thread context
+    263                            ;    * Interrupts are reenabled by CRITICAL_END() call in kernel
+    264                            ;    * Return to Thread B application code
+    265                            ;
+    266                            ; The above shows that it does not matter whether we are rescheduling
+    267                            ; from/to thread context or ISR context. It is perfectly valid to
+    268                            ; enter here at ISR context but leave via a thread which previously
+    269                            ; cooperatively switched out because:
+    270                            ; 1. Although the CPU handles ISRs differently by automatically
+    271                            ;    stacking all 6 CPU registers, and restoring them on an IRET,
+    272                            ;    we handle this because we switch the stack pointer to a
+    273                            ;    different thread's stack. Because the stack pointer is
+    274                            ;    switched, it does not matter that on entry via ISRs more
+    275                            ;    registers are saved on the original thread's stack than entries
+    276                            ;    via non-ISRs. Those extra registers will be restored properly
+    277                            ;    by an IRET when the thread is eventually scheduled back in
+    278                            ;    (which could be a long way off). This assumes that the CPU does
+    279                            ;    not have hidden behaviour that occurs on interrupts, and we can
+    280                            ;    in fact trick it into leaving via another thread's call stack,
+    281                            ;     and performing the IRET much later.
+    282                            ; 2. Although the CPU handles ISRs differently by setting the CC
+    283                            ;    register interrupt-enable bits on entry/exit, we handle this
+    284                            ;    anyway by always assuming interrupts are disabled on entry
+    285                            ;    and exit regardless of the call path.
+    286                        
+    287                            ; Return from subroutine
+    288    00003C 81               ret
+    289                        
+    290                        
+    291                        ; \b archFirstThreadRestore
+    292                        ;
+    293                        ; Architecture-specific function to restore and start the first thread.
+    294                        ; This is called by atomOSStart() when the OS is starting. Its job is to
+    295                        ; restore the context for the first thread and start running at its
+    296                        ; entry point.
+    297                        ;
+    298                        ; All new threads have a stack context pre-initialised with suitable
+    299                        ; data for being restored by either this function or the normal
+    300                        ; function used for scheduling threads in, archContextSwitch(). Only
+    301                        ; the first thread run by the system is launched via this function,
+    302                        ; after which all other new threads will first be run by
+    303                        ; archContextSwitch().
+    304                        ;
+    305                        ; Typically ports will implement something similar here to the
+    306                        ; latter half of archContextSwitch(). In this port the context
+    307                        ; switch does not restore many registers, and instead relies on the
+    308                        ; fact that returning from any function which called
+    309                        ; archContextSwitch() will restore any of the necessary registers.
+    310                        ; For new threads which have never been run there is no calling
+    311                        ; function which will restore context on return, therefore we
+    312                        ; do not restore many register values here. It is not necessary
+    313                        ; for the new threads to have initialised values for the scratch
+    314                        ; registers A, X and Y or the code condition register CC which
+    315                        ; leaves SP and PC. SP is restored because this is always needed to
+    316                        ; switch to a new thread's stack context. It is not necessary to
+    317                        ; restore PC, because the thread's entry point is in the stack
+    318                        ; context (when this function returns using RET the PC is
+    319                        ; automatically changed to the thread's entry point because the
+    320                        ; entry point is stored in the preinitialised stack).
+    321                        ;
+    322                        ; When new threads are started interrupts must be enabled, so there
+    323                        ; is some scope for enabling interrupts in the CC here. It must be
+    324                        ; done for all new threads, however, not just the first thread, so
+    325                        ; we use a different system. We instead use a thread shell routine
+    326                        ; which all functions run when they are first started, and
+    327                        ; interrupts are enabled in there. This allows us to avoid having
+    328                        ; to enable interrupts both in here and in the normal context
+    329                        ; switch routine (archContextSwitch()). For the normal context
+    330                        ; switch routine we would otherwise need to pass in notification of
+    331                        ; and implement special handling for the first time a thread is
+    332                        ; restored.
+    333                        ;
+    334                        ; In summary, first threads do not require a set of CPU registers
+    335                        ; to be initialised to known values, so we only set SP to the new
+    336                        ; thread's stack pointer. PC is restored for free because the RET
+    337                        ; call at the end of this function pops the return address off the
+    338                        ; stack.
+    339                        ;
+    340                        ; Note that you can create more than one thread before starting
+    341                        ; the OS - only one thread is restored using this function, so
+    342                        ; all other threads are actually restored by archContextSwitch().
+    343                        ; This is another reminder that the initial context set up by
+    344                        ; archThreadContextInit() must look the same whether restored by
+    345                        ; archFirstThreadRestore() or archContextSwitch().
+    346                        ;
+    347                        ; @param[in] new_tcb_ptr Pointer to the thread being scheduled in
+    348                        ;
+    349                        ; @return None
+    350                        ;
+    351                        ; void archFirstThreadRestore (ATOM_TCB *new_tcb_ptr)
+    352    00003D                PUBLIC archFirstThreadRestore
+    353    00003D              archFirstThreadRestore:
+    354                            ; Parameter locations:
+    355                            ;  new_tcb_ptr = X register (word-width)
+    356                        
+    357                            ; As described above, first thread restores in this port do not
+    358                            ; expect any initial register context to be pre-initialised in
+    359                            ; the thread's stack area. The thread's initial stack need only
+    360                            ; contain the thread's initial entry point, and we do not even
+    361                            ; "restore" that within this function. We leave the thread's entry
+    362                            ; point in the stack, and RET at the end of the function pops it
+    363                            ; off and "returns" to the entry point as if we were called from
+    364                            ; there.
+    365                            ;
+    366                            ; The one thing we do need to set in here, though, is the thread's
+    367                            ; stack pointer. This is available from the passed thread TCB
+    368                            ; structure.
+    369                        
+    370                            ; Get the new thread's stack pointer off the TCB (new_tcb_ptr).
+    371                            ; new_tcb_ptr is stored in the parameter register X. The stack
+    372                            ; pointer it conveniently located at the top of the TCB so no
+    373                            ; indexing is required to pull it out.
+    374    00003D FE               ldw X,(X)
+    375                        
+    376                            ; Switch our current stack pointer to that of the new thread.
+    377    00003E 94               ldw SP,X
+    378                        
+    379                            ; (IAR) We only context switch ?b8 to ?b15
+    380    00003F 32 ....          POP ?b15
+    381    000042 32 ....          POP ?b14
+    382    000045 32 ....          POP ?b13
+    383    000048 32 ....          POP ?b12
+    384    00004B 32 ....          POP ?b11
+    385    00004E 32 ....          POP ?b10
+    386    000051 32 ....          POP ?b9
+    387    000054 32 ....          POP ?b8
+    388                        
+    389                            ; The "return address" left on the stack now will be the new
+    390                            ; thread's entry point. RET will take us there as if we had
+    391                            ; actually been there before calling this subroutine, whereas
+    392                            ; the return address was actually set up by archThreadContextInit().
+    393    000057 81               ret
+    394                        
+    395                        
+    396    000058                  end
+
+
+Segment             Type        Mode
+----------------------------------------
+.near_func.text     CODE        rel
+
+Label               Mode     Type                   Segment    Value/Offset
+------------------------------------------------------------------------------
+?b0                 extern   extern                 ...        ...
+?b1                 extern   extern, unref          ...        ...
+?b10                extern   extern                 ...        ...
+?b11                extern   extern                 ...        ...
+?b12                extern   extern                 ...        ...
+?b13                extern   extern                 ...        ...
+?b14                extern   extern                 ...        ...
+?b15                extern   extern                 ...        ...
+?b2                 extern   extern, unref          ...        ...
+?b3                 extern   extern, unref          ...        ...
+?b4                 extern   extern, unref          ...        ...
+?b5                 extern   extern, unref          ...        ...
+?b6                 extern   extern, unref          ...        ...
+?b7                 extern   extern, unref          ...        ...
+?b8                 extern   extern                 ...        ...
+?b9                 extern   extern                 ...        ...
+?e0                 extern   extern, unref          ...        ...
+?e1                 extern   extern, unref          ...        ...
+?e2                 extern   extern, unref          ...        ...
+?e3                 extern   extern, unref          ...        ...
+?l0                 extern   extern, unref          ...        ...
+?l1                 extern   extern, unref          ...        ...
+?l2                 extern   extern, unref          ...        ...
+?l3                 extern   extern, unref          ...        ...
+?w0                 extern   extern, unref          ...        ...
+?w1                 extern   extern, unref          ...        ...
+?w2                 extern   extern, unref          ...        ...
+?w3                 extern   extern, unref          ...        ...
+?w4                 extern   extern, unref          ...        ...
+?w5                 extern   extern, unref          ...        ...
+?w6                 extern   extern, unref          ...        ...
+?w7                 extern   extern, unref          ...        ...
+archContextSwitch   rel      label                  .near_func.text0x0
+archFirstThreadRestorerel      label                  .near_func.text0x3d
+
+ 
+ 88 bytes in section .near_func.text  , module ATOMPORTASM
+ 
+ 88 bytes of CODE memory  in module ATOMPORTASM
+
+Errors: none
+Warnings: none

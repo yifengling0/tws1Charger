@@ -1,0 +1,2738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>749723690</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\atomthreads\com\syslog.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\console\console.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\kassert\kassert.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\debug.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\debug_port.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\kassert.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\debug\debug.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\console.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\com\syslog\syslog.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\tws1Charger.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\hallswitchmgr.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_tim1.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\earphonemgr.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\lib\buffer\ringbuffer.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\kassert.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\watchdog.xcl</file>
+            <file>$PROJ_DIR$\boostmgr.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_iwdg.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_adc1.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomqueue.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomsem.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.o</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atommutex.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\app\watchdog.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\syslog.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomsem.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\kernel\atomkernel.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_tim1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\sio.o</file>
+            <file>$PROJ_DIR$\..\..\..\extra\event.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\common.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport.c</file>
+            <file>$PROJ_DIR$\powermgr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport-asm-iar.s</file>
+            <file>$PROJ_DIR$\hallswitchmgr.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.o</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\uart.c</file>
+            <file>$PROJ_DIR$\powermgr.c</file>
+            <file>$PROJ_DIR$\device.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomport.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_adc1.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_adc1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomtimer.o</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_iwdg.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8_interrupt_vector.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\drv\iosdrv.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_tim1.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_uart1.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\kernel\atomsem.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\boostmgr.o</file>
+            <file>$PROJ_DIR$\..\..\..\com\console\console.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomport.o</file>
+            <file>$PROJ_DIR$\watchdog.c</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\com\syslog\syslog.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_exti.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\event.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\extra\event.c</file>
+            <file>$PROJ_DIR$\..\..\..\lib\buffer\ringbuffer.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\debug.c</file>
+            <file>$PROJ_DIR$\..\..\..\com\console\console.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\common.xcl</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003adc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atommutex.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\atomport-asm-iar.s</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_uart1.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomtimer.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.xcl</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_iwdg.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomport-asm-iar.o</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s_conf.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_adc1.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_adc1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\tests-main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\powermgr.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8_interrupt_vector.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\tests-main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomsem.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\ledmgr.o</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomkernel.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\eventmgr.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\port.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\eventmgr.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\ledmgr.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\iosdrv.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\earphonemgr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\datastruct.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\atomport.c</file>
+            <file>$PROJ_DIR$\..\..\..\com\debug\debug.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.o</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\com\console\console.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\debug.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_uart1.c</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\app\powermgr.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\event.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mainApp.o</file>
+            <file>$PROJ_DIR$\boostmgr.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_tim1.c</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\kernel\atomtimer.c</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_gpio.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomport.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\DataStruct.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_clk.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\datastruct.o</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\drv\iosdrv\iosdrv.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\common.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hallswitchmgr.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\event.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\atommutex.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\common.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\uart.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\drv\adc\adc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.__cstat.et</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_uart1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\numberical.xcl</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_tim1.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomqueue.o</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_adc1.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_iwdg.c</file>
+            <file>$PROJ_DIR$\..\..\..\com\debug\debug_port.h</file>
+            <file>$PROJ_DIR$\earphonemgr.c</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.xcl</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8_interrupt_vector.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\event.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\debug.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\ringbuffer.xcl</file>
+            <file>$PROJ_DIR$\watchdog.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomkernel.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003uart.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\tws1.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\boostmgr.xcl</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\sio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomtimer.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\ledmgr.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport-private.h</file>
+            <file>$PROJ_DIR$\..\..\..\drv\iosdrv.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_iwdg.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim1.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_itc.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_adc1.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomqueue.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\device.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\atomport-private.h</file>
+            <file>$PROJ_DIR$\mainApp.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_adc1.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\ringbuffer.o</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s_conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\vregs.inc</file>
+            <file>$PROJ_DIR$\Debug\Exe\tws1Charger.hex</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\debug\datastruct.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atom.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomsem.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\earphonemgr.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\lib\buffer\ringbuffer.c</file>
+            <file>$PROJ_DIR$\earphonemgr.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_clk.c</file>
+            <file>$PROJ_DIR$\..\..\..\lib\mem.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\com\kassert\kassert.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_iwdg.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_itc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\iosdrv.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_exti.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\eventmgr.o</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_itc.h</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomtimer.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003adc.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atom.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomkernel.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_uart1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\port.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomqueue.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomqueue.xcl</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_exti.c</file>
+            <file>$PROJ_DIR$\..\..\..\lib\numberical.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomsem.o</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\kernel\atommutex.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\device.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.o</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\atomport.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\watchdog.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\drv\sio.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_exti.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\mainApp.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\drv\sio\sio.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_adc1.h</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomqueue.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\ringbuffer.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\com\debug\debug.c</file>
+            <file>$PROJ_DIR$\..\..\..\extra\event.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\syslog.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomtimer.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\numberical.o</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_exti.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\device.o</file>
+            <file>$PROJ_DIR$\..\..\..\lib\queue.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\powermgr.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\atommutex.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomtimer.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\syslog.o</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\drv\sio\sio.c</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\com\debug\debug.c</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomsem.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\debug.o</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\drv\pin\pin.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\extra\event.c</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atommutex.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_iwdg.o</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomsem.h</file>
+            <file>$PROJ_DIR$\app\ledmgr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomkernel.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s003adc.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\atomport-asm-iar.s</file>
+            <file>$PROJ_DIR$\app\hallswitchmgr.h</file>
+            <file>$PROJ_DIR$\..\..\..\lib\numberical.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_iwdg.h</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atomqueue.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.xcl</file>
+            <file>$PROJ_DIR$\device.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\tests-main.c</file>
+            <file>$PROJ_DIR$\app\eventmgr.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\kernel\atomqueue.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\boostmgr.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mainApp.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\kassert.__cstat.et</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_itc.c</file>
+            <file>$PROJ_DIR$\..\..\..\os\kernel\atommutex.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\atomport.c</file>
+            <file>$PROJ_DIR$\app\device.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_exti.h</file>
+            <file>$PROJ_DIR$\..\..\atomthreads\lib\numberical\numberical.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\numberical.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\kassert.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8_interrupt_vector.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim1.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\hallswitchmgr.o</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_iwdg.h</file>
+            <file>$PROJ_DIR$\Debug\List\atomport-asm-iar.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\port.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\datastruct.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_tim1.__cstat.et</file>
+            <file>$PROJ_DIR$\hallswitchmgr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_clk.c</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atomkernel.c</file>
+            <file>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_tim1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\atomtimer.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\sio.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_uart1.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\watchdog.o</file>
+            <file>$PROJ_DIR$\app\boostmgr.h</file>
+            <file>$PROJ_DIR$\drivers\stm8s003uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\iosdrv.o</file>
+            <file>$PROJ_DIR$\Debug\List\tws1Charger.map</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s_conf.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_adc1.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_gpio.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_tim1.c</file>
+            <file>$PROJ_DIR$\app\device.c</file>
+            <file>$PROJ_DIR$\app\watchdog.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.xcl</file>
+            <file>$PROJ_DIR$\app\ledmgr.c</file>
+            <file>$PROJ_DIR$\drivers\uart\stm8s003uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\kernel\atommutex.h</file>
+            <file>$PROJ_DIR$\port\port.h</file>
+            <file>$PROJ_DIR$\port\port.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\powermgr.o</file>
+            <file>$PROJ_DIR$\app\boostmgr.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\debug.__cstat.et</file>
+            <file>$PROJ_DIR$\app\powermgr.c</file>
+            <file>$PROJ_DIR$\app\eventmgr.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_iwdg.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_uart1.c</file>
+            <file>$PROJ_DIR$\app\hallswitchmgr.c</file>
+            <file>$PROJ_DIR$\app\mainApp.c</file>
+            <file>$PROJ_DIR$\drivers\adc\stm8s003adc.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_clk.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_exti.c</file>
+            <file>$PROJ_DIR$\drivers\stm8s003adc.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport-asm-iar.s</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\iosdrv.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\queue.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomkernel.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport-private.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomqueue.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\pin\pin.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomsem.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomtimer.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\pin.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atom.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\iosdrv\iosdrv.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\io.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atommutex.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomport-template.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\adc\adc.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\extra\event.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomqueue.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomsem.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\numberical\numberical.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atomtimer.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\buffer\ringbuffer.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\mem.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\numberical.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\lib\ringbuffer.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\sio\sio.c</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\adc.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\drv\sio.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\extra\event.h</file>
+            <file>$PROJ_DIR$\..\atomthreads\kernel\atommutex.c</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 9 301</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\com\console\console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 216</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 310</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 177</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 7 334 118 342 340 302 16 93 304 303 83 290 55 3 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\com\kassert\kassert.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 277</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 269</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 5 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\com\debug\debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 246</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 320</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 4 3 354 7 334 355 93 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\com\syslog\syslog.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 242</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 230</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 0 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 80 226 37 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\tws1Charger.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 182</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 301</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 149 319 255 25 87 63 142 210 50 59 216 246 234 119 197 280 300 15 97 120 232 23 100 316 179 32 200 76 178 214 110 144 252 279 41 242 297 115 117</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_tim1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 279</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 286</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 293 46 88 109 85 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\lib\buffer\ringbuffer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 179</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 156</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\boostmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 161</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 267</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 121 85 46 88 109 293 16 202 241 215 93 40 57 217 24 62 26 251 53 108 209 60 235</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 252</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 169</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 193</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 260 46 88 109 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\kernel\atomsem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 210</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 186</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\kernel\atomkernel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 255</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 203</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\extra\debug\common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 153</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 134</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 201 53 126 130</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 125</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31 167</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\atomport-asm-iar.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 181</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hallswitchmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 280</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 131</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 287 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 253 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 283</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 238</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 184</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 46 88 109 85 293 16 202 241 215 93 313 136 204 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\powermgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 316</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 236</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 36 85 46 88 109 293 16 224 202 241 215 93 40 57 217 24 62 26 251 53 108 209 60 235</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\device.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 234</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 174</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 213</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 263 121 36 287 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 157 189 136 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_adc1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 178</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 90 45 180 237 135 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 252</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 169</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\drv\iosdrv.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 300</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 195</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 168 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 235 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 138</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 204 46 88 109 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\kernel\atomsem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 210</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\watchdog.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 297</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 219</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 157 260 46 88 109 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\com\syslog\syslog.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 242</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 230</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 240</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 135 45 180 237 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\extra\event.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\extra\debug\debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 246</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 320</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 80 53 226 126 154 130 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\com\console\console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 216</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 310</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 177</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 60 235 118 202 241 215 16 93 46 88 109 85 293 108 209 147</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\atomport-asm-iar.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 283</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 238</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 184</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 45 180 237 135 31 16 185 231 106 93 77 143 79 130</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_adc1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 178</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 145</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8_interrupt_vector.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 278</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\kernel\atomkernel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 255</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 203</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 158</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\atomport.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\com\console\console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 216</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 310</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_tim1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 279</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 286</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 31 45 180 237 135 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\kernel\atomtimer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 240</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_clk.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 318</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 237 45 180 135 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\drv\iosdrv\iosdrv.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 300</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 195</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\drv\adc\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 319</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_tim1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 279</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 252</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 169</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 193</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 86 45 180 237 135 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\earphonemgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 187</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 189 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 253 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8_interrupt_vector.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 278</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 283</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 238</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\kernel\atomtimer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 294</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_adc1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 178</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 224 46 88 109 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\kernel\atomqueue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 207</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 118 40 57 217 24 62 26 251 53 185 231 106 16 93 45 180 237 135 31 261</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\mainApp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 268</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 222</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 202 241 215 16 93 46 88 109 85 293 175 263 121 36 287 157 189 33 136 108 209 60 235 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\extra\debug\datastruct.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 128</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 285</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 105</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 143 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31 126</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\lib\buffer\ringbuffer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 179</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 156</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 227</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 201 118 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_clk.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 318</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\com\kassert\kassert.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 277</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\kernel\atomtimer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 294</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_exti.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 150</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 240</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 85 46 88 109 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\kernel\atommutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 239</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_exti.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 196 45 180 237 135 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\drv\sio\sio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 295</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 163</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 220 168 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 235 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\kernel\atomqueue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 207</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 118 40 57 217 24 62 26 251 53 202 241 215 16 93 46 88 109 85 293 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\com\debug\debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 246</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 320</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 147 108 209 191 60 235 93 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\extra\event.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 152</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 33 202 241 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_exti.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 67 46 88 109 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\drv\sio\sio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 295</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\com\debug\debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 246</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\kernel\atomsem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 210</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 186</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 253</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\drv\pin\pin.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 262</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 283</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 238</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 184</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 304 303 83 290 55 16 342 340 302 93 345 74 139 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\extra\event.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 152</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31 68 185 231 261</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\kernel\atommutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 239</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 133</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 313</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\atomport-asm-iar.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87 282</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 181</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\lib\numberical.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 232</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 140</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 276</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 201 53 118 209</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\tests-main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\kernel\atomqueue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 207</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_itc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 194</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 171</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 198 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\kernel\atommutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 239</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 133</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 185 231 106 16 93 40 57 217 24 62 26 251 53 45 180 237 135 31 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\atomport.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 125</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293 175 136</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\atomthreads\lib\numberical\numberical.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 232</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\ports\stm8\stm8s-periphs\stm8s_clk.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 318</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 109 46 88 85 293 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\kernel\atomkernel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 255</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 203</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 158</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 202 241 215 16 93 40 57 217 24 62 26 251 53 46 88 109 85 293</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\os\ports\stm8\stm8s-periphs\stm8s_uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 138</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 79 45 180 237 135 31 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_adc1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 178</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 49 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 240</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 290 304 303 83 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_tim1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 279</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 286</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 55 304 303 83 290 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\device.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 234</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 174</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 213</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 273 298 116 258 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 27 74 360 314</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\watchdog.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 297</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 219</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 27 281 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\ledmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 166</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 254 341</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\drivers\uart\stm8s003uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 159</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 218</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 333 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 334 118 299 359 356 139</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\port\port.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 205</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 284</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 314 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 3 4 299 359 333 334 356</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\boostmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 161</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 267</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 298 290 304 303 83 55 16 342 340 302 93 40 57 217 24 62 26 251 53 3 4 7 334</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\powermgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 316</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 236</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 116 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 3 4 7 334 49 330 358 333</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\eventmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 197</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 99</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 265 360</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 252</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 169</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 193</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 281 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 138</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 139 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\hallswitchmgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 280</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 131</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 258 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 350 274 265 360</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\mainApp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 268</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 222</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 342 340 302 16 93 304 303 83 290 55 336 273 298 116 258 27 360 74 3 4 7 334 118 333 265 254</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\drivers\adc\stm8s003adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 200</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 256</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 330 49 358 333 334 118</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_clk.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 318</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 83 304 303 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\stm8s-periphs\stm8s_exti.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 274 304 303 83 290 55 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport-asm-iar.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87 282</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 181</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\atomport.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 125</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 336 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\kernel\atomkernel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 255</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 203</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 158</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\drv\pin\pin.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 262</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 113</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 341 344 288 40 57 217 24 62 26 251 5</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\kernel\atomsem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 210</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 186</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 350</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\drv\iosdrv\iosdrv.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 300</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 195</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 333 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 334 118 7 3 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\drv\adc\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 319</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 164</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 333 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 334 358</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\extra\event.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 152</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 360 342 340 337</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\kernel\atomqueue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 207</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 118 40 57 217 24 62 26 251 53 342 340 302 16 93 304 303 83 290 55 337</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\lib\numberical\numberical.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 232</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 140</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 276</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 288 40 57 217 24 62 26 251 201 53 118 355</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\kernel\atomtimer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 294</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\lib\buffer\ringbuffer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 179</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 156</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 227</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 40 57 217 24 62 26 251 53 226 201 118 356</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\drv\sio\sio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 295</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 163</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 333 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 334 359 356</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\atomthreads\kernel\atommutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 239</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 133</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 342 340 302 16 93 40 57 217 24 62 26 251 53 304 303 83 290 55 345</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\atomthreads\ports\stm8\uart.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
