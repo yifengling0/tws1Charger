@@ -853,7 +853,7 @@
                     <item>_eventBuffer</item>
                     <item>_event_que</item>
                     <item>event</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
